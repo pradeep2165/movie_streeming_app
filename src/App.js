@@ -8,7 +8,6 @@ import {data} from './rawdata';
 
 function App() {  
   const [movies, setMovies] = useState(data.results);
-  console.log(movies);
 // const { data, isFetching, error } = useGetSearchBasicQuery();
 //   console.log(data);
 //   if(isFetching){
@@ -21,7 +20,7 @@ function App() {
     <div>
     <Navbar/>
     <Banner/>
-    <Popular/>
+    <Popular movies={movies}/>
     </div>
   );
 }
