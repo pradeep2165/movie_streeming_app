@@ -13,7 +13,7 @@ const NavBarItem = ({ title, classprops }) => <li className={`mx-4 cursor-pointe
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <nav className="w-full flex justify-between items-center p-4 bg-slate-700">
+    <nav className="w-full flex justify-between items-center p-4 bg-slate-900">
       <div className="md:flex-[0.5] flex-initial justify-center items-center">
         <ul className="text-white hidden md:flex list-none flex-row justify-between items-center flex-initial">
           <img src={logo} alt="logo" className="w-32 cursor-pointer" />
