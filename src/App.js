@@ -1,9 +1,12 @@
 import { useState } from "react";
 import "./App.css";
+import Banner from "./component/Banner";
+import Navbar from "./component/Navbar";
+import Popular from "./component/Popular";
 // import { useGetSearchBasicQuery } from "./redux/services/Streaming_Availability";
 import {data} from './rawdata';
-function App() {
-  
+
+function App() {  
   const [movies, setMovies] = useState(data.results);
   console.log(movies);
 // const { data, isFetching, error } = useGetSearchBasicQuery();
@@ -16,7 +19,9 @@ function App() {
 //   }
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    <Navbar/>
+    <Banner/>
+    <Popular/>
     </div>
   );
 }
